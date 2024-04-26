@@ -1,7 +1,6 @@
 
 import my_image_gen # 이미지 생성을 위한 모듈을 임포트
 import streamlit as st
-import requests
 import textwrap
 from datetime import datetime
 from openai import OpenAI

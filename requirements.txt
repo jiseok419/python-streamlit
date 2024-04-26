@@ -6,6 +6,3 @@ PyPDF2
 deepl
 openai
 tiktoken
-my_image_gen
-my_text_sum
-my_yt_trans

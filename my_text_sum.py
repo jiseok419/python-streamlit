@@ -1,9 +1,10 @@
 import deepl
 import tiktoken
+import streamlit as st
 from openai import OpenAI
 
 client = OpenAI(
-    api_key = "sk-proj-juzXqETQ6LI92zopNEA4T3BlbkFJEU8QkwxHC2oSoDrfBZ4l"
+    api_key = st.secrets["openai"]
 )
 
 def summarize_text(user_text, lang="en"):

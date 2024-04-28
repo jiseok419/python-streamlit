@@ -63,7 +63,7 @@ def traslate_english_to_korean_using_openAI(text):
     return assistant_reply
 
 def traslate_english_to_korean_using_deepL(text):
-    auth_key = "7e7111d0-bfd5-4b02-83d7-425ebbfd5589"
+    auth_key = st.secrets["deel"]
     translator = deepl.Translator(auth_key)
 
     result = translator.translate_text(text, target_lang="KO")

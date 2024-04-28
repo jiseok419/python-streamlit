@@ -6,10 +6,8 @@ from datetime import datetime
 from openai import OpenAI
 
 client = OpenAI(
-    api_key = "sk-proj-juzXqETQ6LI92zopNEA4T3BlbkFJEU8QkwxHC2oSoDrfBZ4l"
+    api_key = st.secrets["openai"]
 )
-
-st.write("DB username:", st.secrets["db_username"])
 
 st.set_page_config(page_title="openai_image_app", page_icon="📈")
 
